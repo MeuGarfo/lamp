@@ -1,0 +1,10 @@
+id
+empresa
+descricao
+disco
+ram
+transferencia
+moeda
+preco
+created_at
+updated_at

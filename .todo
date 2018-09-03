@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<todo version="0.1.20">
+    <note priority="medium" time="1536001872" done="1536001897">
+        
+    </note>
+    <note priority="medium" time="1536001890" done="1536003911">
+        ler notas no desktop
+    </note>
+    <note priority="medium" time="1536001959" done="1536003918">
+        criar lista de campos de entrada
+    </note>
+    <note priority="medium" time="1536001967" done="1536003924">
+        fazer o form de entrada de dados
+    </note>
+</todo>

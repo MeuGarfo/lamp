@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^config.php - [F,NC]
+RewriteRule ^composer.json - [F,NC]
+RewriteRule ^composer.lock - [F,NC]
+RewriteRule ^vendor(/|$) - [F,NC]
