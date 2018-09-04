@@ -6,6 +6,10 @@ if($count==1){
     print $count.' produtos registrados';
 }
 print '</h5>';
+$moeda=[
+    'dolar'=>4.15,//04set2018 https://www.conversor-dolar.com.br/BRL_USD
+    'euro'=>4.81//04set2018 https://www.conversor-dolar.com.br/Real_Euro
+];
 ?>
 <table id="produtos" class="table table-sm">
     <thead>
@@ -17,6 +21,7 @@ print '</h5>';
             <th>RAM</th>
             <th>Preço</th>
             <th>Moeda</th>
+            <th>R$</th>
             <th>Atualizado em</th>
         </tr>
     </thead>
@@ -31,6 +36,16 @@ print '</h5>';
             print '<td>'.$produto['ram'].'</td>';
             print '<td>'.$produto['preco'].'</td>';
             print '<td>'.$produto['moeda'].'</td>';
+            if($produto['moeda']=='dolar'){
+                $precoEmReais=($produto['preco']*$moeda['dolar']);
+            }
+            if($produto['moeda']=='euro'){
+                $precoEmReais=($produto['preco']*$moeda['euro']);
+            }
+            if($produto['moeda']=='real'){
+                $precoEmReais=$produto['preco'];
+            }
+            print '<td>'.round($precoEmReais,2).'</td>';
             print '<td>'.$produto['updated_at'].'</td>';
             print '</tr>';
         }
@@ -45,7 +60,7 @@ $(document).ready(function() {
         "language": {
             "url": "http://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
         },
-        "order": [[ 1, "asc" ]]
+        "order": [[ 8, "desc" ]]
     } );
 } );
 </script>
