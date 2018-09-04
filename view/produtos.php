@@ -22,16 +22,23 @@ $moeda=[
             <th>Preço</th>
             <th>Moeda</th>
             <th>R$</th>
-            <th>Atualizado em</th>
+            <th>Criado em</th>
         </tr>
     </thead>
     <tbody>
         <?php
+        date_default_timezone_set('America/Sao_Paulo');
         foreach($produtos as $produto){
             print '<tr>';
             print '<td>'.$produto['id'].'</td>';
             print '<td>'.$produto['empresa'].'</td>';
-            print '<td>'.$produto['produto'].'</td>';
+            if (filter_var($produto['url'], FILTER_VALIDATE_URL)) {
+                $link='<a href="'.$produto['url'].'" target="_blank">';
+                $link.=$produto['produto'].'</a>';
+                print '<td>'.$link.'</td>';
+            }else{
+                print '<td>'.$produto['produto'].'</td>';
+            }
             print '<td>'.$produto['disco'].'</td>';
             print '<td>'.$produto['ram'].'</td>';
             print '<td>'.$produto['preco'].'</td>';
@@ -46,7 +53,7 @@ $moeda=[
                 $precoEmReais=$produto['preco'];
             }
             print '<td>'.round($precoEmReais,2).'</td>';
-            print '<td>'.$produto['updated_at'].'</td>';
+            print '<td>'.date('d/M/Y',$produto['created_at']).'</td>';
             print '</tr>';
         }
         ?>

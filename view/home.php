@@ -36,6 +36,14 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
+                                    <label for="url" class="col-form-label col-form-label-sm">Link</label>
+                                    <input id="url" type="url" name="url" class="form-control form-control-sm">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
                                     <label for="disco" class="col-form-label col-form-label-sm">Disco (GBs)</label>
                                     <input id="disco" type="number" name="disco" min="10" step="0.5" class="form-control form-control-sm">
                                 </div>
