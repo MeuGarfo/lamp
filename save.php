@@ -1,0 +1,12 @@
+<?php
+id
+empresa
+produto
+disco
+ram
+transferencia
+moeda
+preco
+created_at
+updated_at
+$em

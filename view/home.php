@@ -24,8 +24,8 @@
                             </div>
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="descricao">Descrição do produto</label>
-                                    <input id="descricao" type="text" name="descricao" class="form-control">
+                                    <label for="produto">Produto</label>
+                                    <input id="produto" type="text" name="produto" class="form-control">
                                 </div>
                             </div>
                         </div>
