@@ -43,7 +43,7 @@
                             <div class="col">
                                 <div class="form-group">
                                     <label for="ram" class="col-form-label col-form-label-sm">RAM (GBs)</label>
-                                    <input id="ram" type="number" step="0.1" min="3.75" name="ram" class="form-control form-control-sm">
+                                    <input id="ram" type="number" name="ram" class="form-control form-control-sm">
                                 </div>
                             </div>
                         </div>
