@@ -52,7 +52,9 @@ $moeda=[
             if($produto['moeda']=='real'){
                 $precoEmReais=$produto['preco'];
             }
-            print '<td>'.round($precoEmReais,2).'</td>';
+            setlocale(LC_MONETARY, 'pt_BR');
+            $precoEmReais=money_format('%i', $precoEmReais) . "\n";
+            print '<td>'.$precoEmReais.'</td>';
             print '<td>'.date('d/M/Y',$produto['created_at']).'</td>';
             print '</tr>';
         }
@@ -67,7 +69,7 @@ $(document).ready(function() {
         "language": {
             "url": "http://cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
         },
-        "order": [[ 8, "desc" ]]
+        "order": [[ 7, "asc" ]]
     } );
 } );
 </script>
