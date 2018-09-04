@@ -1,11 +1,11 @@
 <?php
-print '<h4>';
+print '<hr><h5 class="text-center">';
 if($count==1){
     print $count.' produto registrado';
 }else{
     print $count.' produtos registrados';
 }
-print '</h4>';
+print '</h5>';
 ?>
 <table id="produtos" class="table table-sm">
     <thead>
@@ -15,7 +15,6 @@ print '</h4>';
             <th>Produto</th>
             <th>Disco</th>
             <th>RAM</th>
-            <th>Transferencia</th>
             <th>Preço</th>
             <th>Moeda</th>
             <th>Atualizado em</th>
@@ -30,7 +29,6 @@ print '</h4>';
             print '<td>'.$produto['produto'].'</td>';
             print '<td>'.$produto['disco'].'</td>';
             print '<td>'.$produto['ram'].'</td>';
-            print '<td>'.$produto['transferencia'].'</td>';
             print '<td>'.$produto['preco'].'</td>';
             print '<td>'.$produto['moeda'].'</td>';
             print '<td>'.$produto['updated_at'].'</td>';

@@ -1,28 +1,6 @@
 <?php
-$data['produtos']=[
-    [
-        'id'=>'1',
-        'empresa'=>'Google',
-        'produto'=>'LAMP',
-        'disco'=>'',
-        'ram'=>'',
-        'transferencia'=>'',
-        'moeda'=>'',
-        'preco'=>'',
-        'created_at'=>'',
-        'updated_at'=>''
-    ],
-    [
-        'id'=>'2',
-        'empresa'=>'Microsoft',
-        'produto'=>'LAMP',
-        'disco'=>'',
-        'ram'=>'',
-        'transferencia'=>'',
-        'moeda'=>'',
-        'preco'=>'',
-        'created_at'=>'',
-        'updated_at'=>''
-    ]
-];
+require_once ROOT.'config.php';
+$data['produtos']=$db->select("produto", "*", [
+	"id[>]" => 0
+]);
 view('home',$data);
