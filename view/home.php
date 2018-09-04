@@ -33,7 +33,7 @@
                             <div class="col">
                                 <div class="form-group">
                                     <label for="disco">Disco (GBs)</label>
-                                    <input id="disco" type="text" name="disco" class="form-control">
+                                    <input id="disco" type="number" name="disco" min="10" step="0.5" class="form-control">
                                 </div>
                             </div>
                             <div class="col">
