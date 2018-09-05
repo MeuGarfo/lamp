@@ -68,6 +68,7 @@
                                     <select id="moeda" name="moeda" class="form-control form-control-sm">
                                         <option value="dolar">Dólares</option>
                                         <option value="euro">Euros</option>
+                                        <option value="grivnia">Grívnias</option>
                                         <option value="real">Reais</option>
                                     </select>
                                 </div>

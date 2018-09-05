@@ -8,7 +8,8 @@ if($count==1){
 print '</h5>';
 $moeda=[
     'dolar'=>4.15,//04set2018 https://www.conversor-dolar.com.br/BRL_USD
-    'euro'=>4.81//04set2018 https://www.conversor-dolar.com.br/Real_Euro
+    'euro'=>4.81,//04set2018 https://www.conversor-dolar.com.br/Real_Euro
+    'grivnia'=>6.85//04set2018 https://www.conversor-dolar.com.br/BRL_UAH
 ];
 ?>
 <table id="produtos" class="table table-sm">
@@ -43,13 +44,9 @@ $moeda=[
             print '<td>'.$produto['ram'].'</td>';
             print '<td>'.$produto['preco'].'</td>';
             print '<td>'.$produto['moeda'].'</td>';
-            if($produto['moeda']=='dolar'){
-                $precoEmReais=($produto['preco']*$moeda['dolar']);
-            }
-            if($produto['moeda']=='euro'){
-                $precoEmReais=($produto['preco']*$moeda['euro']);
-            }
-            if($produto['moeda']=='real'){
+            if(isset($moeda[$produto['moeda']])){
+                $precoEmReais=($produto['preco']*$moeda[$produto['moeda']]);
+            }else{
                 $precoEmReais=$produto['preco'];
             }
             setlocale(LC_MONETARY, 'pt_BR');
