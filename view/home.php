@@ -70,6 +70,7 @@
                                         <option value="euro">Euros</option>
                                         <option value="grivnia">Grívnias</option>
                                         <option value="real">Reais</option>
+                                        <option value="rupia-indonesia">Rupia Indonésia</option>
                                     </select>
                                 </div>
                             </div>
