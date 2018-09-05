@@ -13,7 +13,7 @@ $moeda=[
     'rupia-indonesia'=>3.471//https://www.conversor-dolar.com.br/BRL_IDR
 ];
 ?>
-<table id="produtos" class="table table-sm">
+<table id="produtos" class="table table-hover table-sm">
     <thead>
         <tr>
             <th>ID</th>
