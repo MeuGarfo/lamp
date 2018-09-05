@@ -12,4 +12,7 @@
     <note priority="medium" time="1536001967" done="1536003924">
         fazer o form de entrada de dados
     </note>
+    <note priority="medium" time="1536109844">
+        colocar o preço por hora em reais
+    </note>
 </todo>
