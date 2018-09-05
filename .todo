@@ -15,4 +15,10 @@
     <note priority="medium" time="1536109844">
         colocar o preço por hora em reais
     </note>
+    <note priority="medium" time="1536110280">
+        editar produto
+    </note>
+    <note priority="medium" time="1536110285">
+        apagar produto
+    </note>
 </todo>
