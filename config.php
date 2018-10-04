@@ -11,6 +11,7 @@ require_once ROOT.'vendor/autoload.php';
 
 use Medoo\Medoo;
 
+
 $db=new Medoo([
     // required
     'database_type' => 'mysql',
@@ -19,3 +20,10 @@ $db=new Medoo([
     'username' => 'root',
     'password' => ''
 ]);
+
+/*
+$db = new Medoo([
+	'database_type' => 'sqlite',
+	'database_file' => __DIR__.'/banco.db'
+]);
+*/

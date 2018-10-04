@@ -1,5 +1,6 @@
 {
     "require": {
-        "basic/migration": "2.1.0"
+        "basic/migration": "2.1.0",
+        "ifsnop/mysqldump-php": "^2.5"
     }
 }
