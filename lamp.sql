@@ -2,8 +2,8 @@
 --
 -- Host: localhost	Database: lamp
 -- ------------------------------------------------------
--- Server version 	5.5.5-10.1.34-MariaDB-0ubuntu0.18.04.1
--- Date: Thu, 04 Oct 2018 08:51:34 -0300
+-- Server version 	5.5.5-10.0.36-MariaDB-0ubuntu0.16.04.1
+-- Date: Sat, 06 Oct 2018 10:12:11 -0300
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -58,4 +58,4 @@ COMMIT;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on: Thu, 04 Oct 2018 08:51:34 -0300
+-- Dump completed on: Sat, 06 Oct 2018 10:12:11 -0300
