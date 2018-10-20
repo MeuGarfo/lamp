@@ -7,8 +7,8 @@ if($count==1){
 }
 print '</h5>';
 $moeda=[
-    'dolar'=>3.76,//08out2018 https://www.conversor-dolar.com.br/BRL_USD
-    'euro'=>4.31,//08out2018 https://www.conversor-dolar.com.br/Real_Euro
+    'dolar'=>3.71,//20out2018 https://www.conversor-dolar.com.br/BRL_USD
+    'euro'=>4.28,//20out2018 https://www.conversor-dolar.com.br/Real_Euro
 ];
 ?>
 <table id="produtos" class="table table-hover table-sm">
